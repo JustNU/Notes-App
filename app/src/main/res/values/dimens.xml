@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="listItemFontSizeInside">20sp</dimen>
+    <dimen name="listItemFontSizeTitle">25sp</dimen>
+    <dimen name="listItemImageHeight">100dp</dimen>
+    <dimen name="listItemImageWidth">100dp</dimen>
+</resources>

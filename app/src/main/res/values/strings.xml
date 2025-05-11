@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Notes App</string>
+    <string name="listItem_placeholder1">blep blop</string>
+    <string name="listItem_placeholder2">way way way way way way longer blep blop, you should not be seeing this</string>
+    <string name="listItem_IconDesc">Icon depicting a notepad</string>
+</resources>
