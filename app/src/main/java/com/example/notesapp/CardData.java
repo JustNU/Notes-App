@@ -1,10 +1,10 @@
 package com.example.notesapp;
 
-public class CardViewModel {
-    String cardViewTitle;
-    String cardViewInner;
+public class CardData {
+    private String cardViewTitle;
+    private String cardViewInner;
 
-    public CardViewModel(String cardViewInner, String cardViewTitle) {
+    public CardData(String cardViewInner, String cardViewTitle) {
         this.cardViewInner = cardViewInner;
         this.cardViewTitle = cardViewTitle;
     }

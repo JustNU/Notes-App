@@ -8,9 +8,10 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layoutManager="GridLayoutManager"
+        app:layoutManager="LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
