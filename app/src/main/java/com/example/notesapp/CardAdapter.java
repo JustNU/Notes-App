@@ -8,10 +8,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>  {
-    private CardData data;
+import java.util.ArrayList;
 
-    public CardAdapter(CardData data) {
+public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>  {
+    private final ArrayList<CardData> data;
+
+    public CardAdapter(ArrayList<CardData> data) {
         this.data = data;
     }
 
@@ -24,18 +26,20 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder>  {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.setData(data);
+        for (int i = 0; i < data.size(); i++) {
+            holder.setData(data.get(i));
+        }
     }
 
     @Override
     public int getItemCount() {
-        return 2;
+        return data.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView title;
-        private TextView innerText;
+        private final TextView title;
+        private final TextView innerText;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

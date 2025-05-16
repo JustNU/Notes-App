@@ -3,4 +3,9 @@
     <string name="listItem_TitlePlaceholder">Note Title</string>
     <string name="listItem_InnerPlaceholder">Note Inner Text</string>
     <string name="listItem_IconDesc">Note Icon</string>
+    <string name="listItem_EditNote">Edit Note</string>
+    <string name="listItem_DeleteNote">Delete Note</string>
+    <string name="activityMain_NoNotes">No notes here yet!</string>
+    <string name="activityMain_deleteAll">Delete all notes</string>
+    <string name="activityMain_add">Add a note</string>
 </resources>

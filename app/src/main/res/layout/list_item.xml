@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:backgroundTint="@color/list_item_background"
     app:cardCornerRadius="15dp"
     app:cardElevation="3dp">
 
@@ -14,11 +16,13 @@
             android:id="@+id/listItem_Image"
             android:layout_width="@dimen/listItemImageWidth"
             android:layout_height="@dimen/listItemImageHeight"
+            android:backgroundTint="@color/list_item_background"
             android:contentDescription="@string/listItem_IconDesc"
+            app:tint="@color/list_item_icon"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/note_item_icon" />
+            app:srcCompat="@drawable/icon_listitem_note" />
 
         <TextView
             android:id="@+id/listItem_titleText"
@@ -30,7 +34,7 @@
             android:text="@string/listItem_TitlePlaceholder"
             android:textSize="@dimen/listItemFontSizeTitle"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/listItem_editButton"
             app:layout_constraintStart_toEndOf="@+id/listItem_Image"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,10 +50,31 @@
             android:minLines="1"
             android:text="@string/listItem_InnerPlaceholder"
             android:textSize="@dimen/listItemFontSizeInside"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.035"
+            app:layout_constraintEnd_toStartOf="@+id/listItem_deleteButton"
             app:layout_constraintStart_toEndOf="@+id/listItem_Image"
             app:layout_constraintTop_toBottomOf="@+id/listItem_titleText" />
+
+        <ImageButton
+            android:id="@+id/listItem_deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/list_item_background"
+            android:contentDescription="@string/listItem_DeleteNote"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listItem_editButton"
+            app:srcCompat="@drawable/icon_listitem_delete"
+            app:tint="@color/list_item_icon" />
+
+        <ImageButton
+            android:id="@+id/listItem_editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/list_item_background"
+            android:contentDescription="@string/listItem_EditNote"
+            app:tint="@color/list_item_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_listitem_edit" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
