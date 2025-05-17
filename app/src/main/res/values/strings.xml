@@ -7,5 +7,7 @@
     <string name="listItem_DeleteNote">Delete Note</string>
     <string name="activityMain_NoNotes">No notes here yet!</string>
     <string name="activityMain_deleteAll">Delete all notes</string>
-    <string name="activityMain_add">Add a note</string>
+    <string name="activityMain_add">Create a note</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
 </resources>
