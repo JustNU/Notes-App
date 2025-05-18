@@ -29,12 +29,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ellipsize="end"
             android:singleLine="true"
             android:text="@string/listItem_TitlePlaceholder"
             android:textSize="@dimen/listItemFontSizeTitle"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/listItem_editButton"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/listItem_Image"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,37 +45,16 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
             android:ellipsize="end"
             android:lineSpacingExtra="8sp"
             android:maxLines="2"
             android:minLines="1"
             android:text="@string/listItem_InnerPlaceholder"
             android:textSize="@dimen/listItemFontSizeInside"
-            app:layout_constraintEnd_toStartOf="@+id/listItem_deleteButton"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/listItem_Image"
             app:layout_constraintTop_toBottomOf="@+id/listItem_titleText" />
-
-        <ImageButton
-            android:id="@+id/listItem_deleteButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/list_item_background"
-            android:contentDescription="@string/listItem_DeleteNote"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/listItem_editButton"
-            app:srcCompat="@drawable/icon_listitem_delete"
-            app:tint="@color/list_item_icon" />
-
-        <ImageButton
-            android:id="@+id/listItem_editButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/list_item_background"
-            android:contentDescription="@string/listItem_EditNote"
-            app:tint="@color/list_item_icon"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/icon_listitem_edit" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

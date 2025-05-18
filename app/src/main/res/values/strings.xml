@@ -10,4 +10,5 @@
     <string name="activityMain_add">Create a note</string>
     <string name="create">Create</string>
     <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
 </resources>
